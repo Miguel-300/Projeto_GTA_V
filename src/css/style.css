@@ -1,0 +1,123 @@
+body {
+    background-color: #282828;
+    color: white;
+}
+
+.cabeca {
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #;
+}
+
+.cabeca .logo {
+    display: flex;
+    gap: 15px;
+}
+
+.cabeca .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabeca .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet';
+}
+
+.cabeca .menu li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home .imagem_fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .infor {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .infor img {
+    max-width: 150px;
+
+}
+
+.home .infor .lista_de_jogos {
+    display: flex;
+    gap: 32px;
+}
+
+.home .infor .titulo {
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+}
+
+.home .infor .texto {
+    font-family: 'Chalet';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.button_comprar {
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.button_comprar:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.compre .capa_do_jogo{
+    width: 270px;
+}
+.compre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+.compre .titulo{
+    font-family: 'ChaletComprime';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.compre .cartao
