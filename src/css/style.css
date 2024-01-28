@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
-    border-bottom: 1px solid #;
+    border-bottom: 1px solid #282828;
 }
 
 .cabeca .logo {
@@ -87,7 +87,8 @@ body {
     line-height: 1.6;
 }
 
-.button_comprar {
+.button_comprar,
+.button_plataformas {
     background-color: rgba(255, 255, 255, .1);
     border: 0.5px solid #fff;
     border-radius: 4px;
@@ -100,24 +101,127 @@ body {
     transition: all .3s ease-in;
 }
 
+.button_plataformas {
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
 .button_comprar:hover {
     background-color: #fff;
     color: #000;
 }
 
-.compre .capa_do_jogo{
+.compre .capa_do_jogo {
     width: 270px;
 }
-.compre{
+
+.compre {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 50px;
+    align-items: center;
 }
-.compre .titulo{
+
+.compre .titulo {
     font-family: 'ChaletComprime';
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 50px;
 }
-.compre .cartao
+
+.compre .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.compre .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.compre .informacoes h3 {
+    font-family: 'ChaletComprime';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.compre .informacoes p {
+    color: #e8e8e8;
+    font-family: 'Chalet';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.compre .button_plataformas .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+.compre .button_plataformas .plataformas.ativo{
+    display: flex;
+    opacity: 1;
+}
+
+.compre .button_plataformas .plataformas li {
+    padding: 20px;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(1) {
+    border: 1px solid #00439c;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(1):hover {
+    background-color: #00439c;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(2) {
+    border: 1px solid #387a26;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(2):hover {
+    background-color: #387a26;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(4) {
+    border: 1px solid #387a26;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(4):hover {
+    background-color: #387a26;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(5) {
+    border: 1px solid #fcaf17;
+}
+
+.compre .button_plataformas .plataformas li:nth-child(5):hover {
+    background-color: #fcaf17;
+}
