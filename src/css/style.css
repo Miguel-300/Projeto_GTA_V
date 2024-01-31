@@ -177,7 +177,8 @@ body {
     display: none;
     opacity: 0;
 }
-.compre .button_plataformas .plataformas.ativo{
+
+.compre .button_plataformas .plataformas.ativo {
     display: flex;
     opacity: 1;
 }
